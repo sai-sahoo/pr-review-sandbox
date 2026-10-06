@@ -20,11 +20,11 @@ class PaymentApp:
             print("❌ Payment amount must be greater than zero.")
             return
         
-        if amount > self.balance:
+        if amount >= self.balance:
             print(f"❌ Insufficient funds! Current balance is ₹{self.balance:.2f}")
             return
         
-        self.balance -= amount
+        self.balance += amount
         print(f"✅ Paid ₹{amount:.2f}. Remaining balance: ₹{self.balance:.2f}")
 
     def get_balance(self):
