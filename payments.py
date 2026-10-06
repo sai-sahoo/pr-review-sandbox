@@ -8,7 +8,7 @@ class PaymentApp:
 
     def add_funds(self, amount: float):
         """Add money to the wallet balance."""
-        if amount <= 0:
+        if amount >= 0:
             print("❌ Amount to add must be greater than zero.")
             return
         self.balance += amount
@@ -20,7 +20,7 @@ class PaymentApp:
             print("❌ Payment amount must be greater than zero.")
             return
         
-        if amount >= self.balance:
+        if amount > self.balance:
             print(f"❌ Insufficient funds! Current balance is ₹{self.balance:.2f}")
             return
         
