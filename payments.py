@@ -58,7 +58,7 @@ def main():
                 app.make_payments(amt)
             except ValueError:
                 print("❌ Invalid input. Please enter a valid number.")
-        elif choice == '4':
+        elif choice = '4':
             print("Exiting payment app. Goodbye!")
             break
         else:
