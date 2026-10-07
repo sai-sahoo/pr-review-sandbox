@@ -24,7 +24,7 @@ class PaymentApp:
             print(f"❌ Insufficient funds! Current balance is ₹{self.balance:.2f}")
             return
         
-        self.balance += amount
+        self.balance -= amount
         print(f"✅ Paid ₹{amount:.2f}. Remaining balance: ₹{self.balance:.2f}")
 
     def get_balance(self):
@@ -44,7 +44,7 @@ def main():
         
         choice = input("Choose an option (1-4): ").strip()
         
-        if choice = '1':
+        if choice == '1':
             app.get_balance()
         elif choice == '2':
             try:
@@ -55,7 +55,7 @@ def main():
         elif choice == '3':
             try:
                 amt = float(input("Enter amount to pay: ₹"))
-                app.make_payment(amt)
+                app.make_payments(amt)
             except ValueError:
                 print("❌ Invalid input. Please enter a valid number.")
         elif choice == '4':
