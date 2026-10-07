@@ -55,10 +55,10 @@ def main():
         elif choice == '3':
             try:
                 amt = float(input("Enter amount to pay: ₹"))
-                app.make_payments(amt)
+                app.make_payment(amt)
             except ValueError:
                 print("❌ Invalid input. Please enter a valid number.")
-        elif choice = '4':
+        elif choice == '4':
             print("Exiting payment app. Goodbye!")
             break
         else:
