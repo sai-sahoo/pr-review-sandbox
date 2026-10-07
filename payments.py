@@ -8,7 +8,7 @@ class PaymentApp:
 
     def add_funds(self, amount: float):
         """Add money to the wallet balance."""
-        if amount >= 0:
+        if amount <= 0:
             print("❌ Amount to add must be greater than zero.")
             return
         self.balance += amount
@@ -44,7 +44,7 @@ def main():
         
         choice = input("Choose an option (1-4): ").strip()
         
-        if choice == '1':
+        if choice = '1':
             app.get_balance()
         elif choice == '2':
             try:
