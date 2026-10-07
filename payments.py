@@ -43,6 +43,12 @@ def main():
         print("4. Exit")
         
         choice = input("Choose an option (1-4): ").strip()
+        """
+        Hii
+        i am Sai
+        How are you?
+        """
+        
         
         if choice == '1':
             app.get_balance()
