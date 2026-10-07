@@ -44,7 +44,7 @@ def main():
         
         choice = input("Choose an option (1-4): ").strip()
         
-        if choice = '1':
+        if choice == '1':
             app.get_balance()
         elif choice == '2':
             try:
